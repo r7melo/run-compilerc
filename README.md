@@ -30,8 +30,8 @@ cd seu-repo`
 3. Pressiona F5 ou vai em Run > Start Debugging pra abrir uma nova janela do VSCode com a extensão carregada.
 
 4. Abre um arquivo `.c` e pressiona `Ctrl+Shift+P`, digita:
-- Run C → compila e executa
-- Build C → só compila
+- Ctrl+F9 → compila e executa
+- Ctrl+F10 → compila e salva o executavel
 
 ---
 
