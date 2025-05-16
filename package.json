@@ -1,0 +1,55 @@
+{
+  "name": "run-compilerc",
+  "displayName": "run-compilerc",
+  "description": "Executar arquivos C automaticamente com o comando compilerc",
+  "version": "0.0.2",
+  "publisher": "MelusDev",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:run-compilerc.runCode",
+    "onCommand:run-compilerc.buildExe"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "run-compilerc.runCode",
+        "title": "Run compilerc (CTRL+F9)"
+      },
+      {
+        "command": "run-compilerc.buildExe",
+        "title": "Build Executable (CTRL+F10)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "run-compilerc.runCode",
+        "key": "ctrl+f9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "run-compilerc.buildExe",
+        "key": "ctrl+f10",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
