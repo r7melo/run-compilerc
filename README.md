@@ -1,54 +1,33 @@
-# 🧠 Extensão VSCode: Compile e Execute Arquivos C
+# Extensão VSCode para Compilar e Executar Código C
 
-Esta extensão permite **compilar** e **executar** arquivos `.c` diretamente do Visual Studio Code com um clique, usando `gcc`.
+Essa extensão permite compilar e executar arquivos `.c` no Windows usando GCC direto do VSCode.
 
----
+## Requisitos
 
-## ✅ Funcionalidades
+- Visual Studio Code instalado
+- GCC instalado e configurado no PATH (ex: MinGW)
 
-- 📥 Compila o arquivo `.c` atual (comando: Build C)
-- 🚀 Compila e executa o `.c` atual em um terminal externo do Windows (comando: Run C)
-- ❌ Mostra erros de compilação direto no VSCode
+## Como baixar e instalar
 
----
+1. Baixe o arquivo `.vsix` desta extensão diretamente aqui:
 
-## 🧪 Requisitos
+[Download do run-compilerc-0.0.3.vsix](https://github.com/r7melo/run-compilerc/blob/releases/run-compilerc-0.0.3.vsix)
 
-- **GCC instalado**  
-  Instale o [MinGW](http://www.mingw.org/) ou use o WSL com gcc.  
-  No terminal, verifica com: `gcc --version`
+2. Instale a extensão no VSCode com o comando no terminal:
 
----
-
-## 💾 Instalação da Extensão (Modo Dev)
-
-1. Clone o repositório: `git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo`
-
-2. Abre o projeto no VSCode: `code .`
-
-3. Pressiona F5 ou vai em Run > Start Debugging pra abrir uma nova janela do VSCode com a extensão carregada.
-
-4. Abre um arquivo `.c` e pressiona `Ctrl+Shift+P`, digita:
-- Ctrl+F9 → compila e executa
-- Ctrl+F10 → compila e salva o executavel
-
----
-
-## 📁 Estrutura do projeto
+```bash
+code --install-extension run-compilerc-0.0.3.vsix
 ```
-.
-├── extension.js # Código principal da extensão
-├── package.json # Metadata da extensão VSCode
-├── .gitignore # Arquivos ignorados no Git
-├── README.md # Esse arquivo
-```
----
 
-## 🚧 Observações
+# Como usar a extensão run-compilerc
 
-- Testado só no Windows, pois usa `start cmd /c` pra abrir o executável.
-- Futuramente planejo suporte para Linux e Mac.
+1. Abra um arquivo `.c` no VSCode.
 
----
+2. Pressione `Ctrl+Shift+P` para abrir a paleta de comandos.
 
+3. Escolha um dos comandos:
+
+   - **Run Compile RC** (`Ctrl+Alt+R`) — compila e executa o arquivo aberto.
+   - **Build Compile RC** (`Ctrl+Alt+B`) — compila somente o arquivo aberto.
+
+4. O executável `.exe` será gerado na mesma pasta do arquivo fonte.
