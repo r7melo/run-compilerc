@@ -27,7 +27,7 @@ code --install-extension run-compilerc-0.0.3.vsix
 
 3. Escolha um dos comandos:
 
-   - **Run Compile RC** (`Ctrl+Alt+R`) — compila e executa o arquivo aberto.
-   - **Build Compile RC** (`Ctrl+Alt+B`) — compila somente o arquivo aberto.
+   - **Run Compile RC** (`Ctrl+F9`) — compila e executa o arquivo aberto.
+   - **Build Compile RC** (`Ctrl+F10`) — compila somente o arquivo aberto.
 
 4. O executável `.exe` será gerado na mesma pasta do arquivo fonte.
